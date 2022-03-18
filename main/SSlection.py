@@ -151,7 +151,7 @@ def weights_init_classifier(m):
 class CMS2(nn.Module):
 
     def __init__(self, num_classes, task_input_size, base_ratio, radius, radius_inv):
-        super(S3N, self).__init__()
+        super(CMS2, self).__init__()
         self.grid_size = 25
         self.padding_size = 24
         self.global_size = self.grid_size + 2 * self.padding_size
